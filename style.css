@@ -1,0 +1,127 @@
+:root {
+    --bg: #f4f7fb;
+    --card-bg: #ffffff;
+    --text: #1b1f23;
+    --primary: #2563eb;
+    --primary-hover: #1e4ec7;
+    --radius: 14px;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* DARK THEME */
+.dark {
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --text: #e2e8f0;
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.controls button,
+.controls select {
+    margin-left: 10px;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: var(--card-bg);
+    color: var(--text);
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    gap: 10px;
+    padding: 15px 30px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabs button:hover {
+    background: var(--primary-hover);
+}
+
+/* SECTIONS */
+section {
+    display: none;
+    padding: 30px;
+}
+
+section.active {
+    display: block;
+}
+
+/* CARD */
+.result-card, section input, section select {
+    width: 100%;
+    max-width: 500px;
+}
+
+section input,
+section select {
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 16px;
+}
+
+section button {
+    padding: 14px 25px;
+    background: var(--primary);
+    color: white;
+    border: 0;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+section button:hover {
+    background: var(--primary-hover);
+}
+
+.result-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    font-size: 17px;
+    margin-top: 20px;
+}
