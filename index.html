@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>PowerCalc — Розрахунок інвертора, АКБ та СЕС</title>
+<title>⚡ PowerCalc PRO — Інвертор, АКБ, СЕС</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -25,7 +25,7 @@
 <nav class="tabs">
     <button onclick="openTab('inv')">Інвертор</button>
     <button onclick="openTab('battery')">Акумулятори</button>
-    <button onclick="openTab('solar')">Сонячна станція</button>
+    <button onclick="openTab('solar')">Сонячна Станція</button>
     <button onclick="openTab('price')">Вартість</button>
     <button onclick="openTab('charts')">Графіки</button>
 </nav>
@@ -89,18 +89,18 @@
     <label>Потрібна енергія на добу (кВт·год)</label>
     <input id="solarNeed" type="number">
 
-    <label>Середня інсоляція (годин сонця)</label>
+    <label>Середня інсоляція (год)</label>
     <input id="sunHours" type="number" placeholder="UA: 3.5–5 год">
 
     <label>Потужність панелі (Вт)</label>
-    <input id="panelW" type="number" placeholder="Наприклад: 450">
+    <input id="panelW" type="number" placeholder="450">
 
     <button onclick="calcSolar()">Розрахувати</button>
 
     <div id="solarResult" class="result-card"></div>
 </section>
 
-<!-- ░░░ ВАРТІСТЬ ░░░ -->
+<!-- ░░░ Вартість ░░░ -->
 <section id="price" class="tab">
     <h2>Оцінка вартості системи</h2>
 
@@ -117,10 +117,9 @@
     <div id="priceResult" class="result-card"></div>
 </section>
 
-<!-- ░░░ ГРАФІКИ ░░░ -->
+<!-- ░░░ GRAPH ░░░ -->
 <section id="charts" class="tab">
     <h2>Графік виробітку та споживання</h2>
-
     <canvas id="powerChart" width="400" height="200"></canvas>
 </section>
 
